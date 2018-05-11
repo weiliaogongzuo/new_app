@@ -7,7 +7,7 @@ class IndexController extends Controller {
     public function index()
     {
         header("Content-type: text/html; charset=utf-8");
-        echo "这里已经迁移到火星了";
+        echo "这是示例项目，用了原来ipmwx项目，thinkphp3框架。";
 		exit;
     }
 
