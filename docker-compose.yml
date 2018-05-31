@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+  web:
+    build: .
+    restart: always
+    ports:
+      - 23456:80
+    networks:
+      - rili-tech
+
+networks:
+  rili-tech:
+    external:
+      name: rili-tech
