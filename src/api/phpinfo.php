@@ -1,2 +1,3 @@
-<?php phpinfo();
-echo 23423423;die;
+<?php echo 23423423;die;
+phpinfo();
+
