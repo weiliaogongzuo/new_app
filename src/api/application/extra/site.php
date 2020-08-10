@@ -1,7 +1,7 @@
 <?php
 
 return array (
-  'name' => '鈤励小程序系统',
+  'name' => '鈤励爱协同系统',
   'beian' => '',
   'cdnurl' => '',
   'version' => '1.0.1',
