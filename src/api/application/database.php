@@ -11,7 +11,11 @@
 // +----------------------------------------------------------------------
 
 use think\Env;
-
+//ENV TP_DB_HOST_NAME=szrl-rili-tech-yun.mysql.rds.aliyuncs.com
+//ENV TP_DB_HOST_PORT=3306
+//ENV TP_DB_USER_NAME=user_ipm
+//ENV TP_DB_PASSWORD=ipm@RL-tech
+//ENV TP_DB_DATABASE=ipm_db
 return [
     // 数据库类型
     'type'            => Env::get('database.type', 'mysql'),
@@ -24,7 +28,20 @@ return [
     // 密码
     'password'        => Env::get('database.password', 'root'),
     // 端口
-    'hostport'        => Env::get('database.hostport', ''),
+    'hostport'        => Env::get('database.hostport', '3306'),
+
+    // 服务器地址
+//    'hostname'        => Env::get('database.hostname', 'szrl-rili-tech-yun.mysql.rds.aliyuncs.com'),
+//    // 数据库名
+//    'database'        => Env::get('database.database', 'rilinewapp'),
+//    // 用户名
+//    'username'        => Env::get('database.username', 'user_ipm'),
+//    // 密码
+//    'password'        => Env::get('database.password', 'ipm@RL-tech'),
+//    // 端口
+//    'hostport'        => Env::get('database.hostport', '3306'),
+
+
     // 连接dsn
     'dsn'             => '',
     // 数据库连接参数
@@ -34,7 +51,7 @@ return [
     // 数据库表前缀
     'prefix'          => Env::get('database.prefix', 'rili_'),
     // 数据库调试模式
-    'debug'           => Env::get('database.debug', false),
+    'debug'           => Env::get('database.debug', true),
     // 数据库部署方式:0 集中式(单一服务器),1 分布式(主从服务器)
     'deploy'          => 0,
     // 数据库读写是否分离 主从式有效
